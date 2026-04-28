@@ -28,7 +28,7 @@
 
 ## Repository status
 
-This repository is currently in progress. It supports the accepted Canadian AI paper and will be updated incrementally with code, experiments, and reproducible materials.
+This repository is currently in progress. It supports the accepted Canadian AI paper and will be updated incrementally with code, experiments, and reproducible materials leading up to the start of the conference (https://www.ai-crv.ca/).
 
 ## Overview
 
