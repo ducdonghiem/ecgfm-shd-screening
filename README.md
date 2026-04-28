@@ -22,15 +22,13 @@
 
 > **Abstract:** *Transthoracic echocardiography is the reference standard for confirming structural heart disease (SHD), but its use as a first-line screening modality is limited by cost, workflow burden, and specialist availability. This study investigated whether open pretrained electrocardiogram (ECG) models can support echo-confirmed multi-label SHD detection using the public EchoNext Mini-Model benchmark. We focused on six moderate-or-greater echocardiography-derived abnormalities spanning reduced left ventricular ejection fraction, increased left ventricular wall thickness, aortic stenosis, mitral regurgitation, tricuspid regurgitation, and right ventricular systolic dysfunction. Under a common experimental pipeline, we compared engineered ECG features with gradient boosting, end-to-end waveform learning from scratch, and transfer from open ECG foundation models. We then evaluated continued in-domain self-supervised adaptation of ECG-FM on EchoNext waveforms followed by selective supervised fine-tuning, with emphasis on the trade-off between discrimination and adaptation cost. Among the evaluated configurations, the adapted ECG-FM models achieved the strongest overall performance. Across adaptation depths, peak macro-AUROC and macro-AUPRC reached 0.8509 and 0.4297, respectively, while a more parameter-efficient operating point preserved nearly identical AUROC (0.8501) and achieved the highest fixed-threshold macro-F1 (0.3691). Late fusion of the release-provided covariates did not improve threshold-independent discrimination, and the evaluated low-rank adaptation (LoRA) configuration, alternative foundation backbones, and mixture-of-foundation-model strategies did not surpass the best adapted single-backbone operating points. These findings indicate that, for ECG-based case finding and echocardiography triage, the most effective transfer strategy is to combine target-domain self-supervised adaptation with selective supervised updating of a pretrained ECG backbone.*
 
+**Preprint available**: https://arxiv.org/abs/2604.23385
+
 ---
 
 ## Repository status
 
 This repository is currently in progress. It supports the accepted Canadian AI paper and will be updated incrementally with code, experiments, and reproducible materials.
-
-Preprint available: https://arxiv.org/abs/2604.23385
-
----
 
 ## Overview
 
@@ -65,8 +63,21 @@ The repository is currently under active cleanup and organization. Some files, s
 
 ## Citation
 
-A citation entry will be added after the final camera-ready version is completed.
+If you use this work, please cite the following arXiv preprint:
+
+```
+@misc{do2026domainadaptedfinetuningecgfoundation,
+  title={Domain-Adapted Fine-Tuning of ECG Foundation Models for Multi-Label Structural Heart Disease Screening},
+  author={Duc N. Do and Minh N. Do and Dang Nguyen and Khanh T. Q. Le and Khoa D. Pham and Hung N. Huynh and Phi Pham-Van-Hoang and Quan K. Huynh and Ramez M. Odat and Perisa Ashar and Ethan Philip Lowder and Minh H. N. Le and Hoang Le and Phat V. H. Nguyen and Quan Le and Jacques Kpodonu and Phat K. Huynh},
+  year={2026},
+  eprint={2604.23385},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2604.23385}
+}
+```
 
 ## Contact
+For questions related to the paper, please contact the corresponding author listed in the manuscript.
 
-For questions related to the paper or repository, please contact the corresponding author listed in the paper.
+For questions related to the code or repository, contact: **Duc Do** - dod2@myumanitoba.ca
